@@ -5,6 +5,10 @@ on:
     branches: [main]
 
 jobs:
+  style:
+    name: Style
+    run: npm run format:check
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
@@ -21,8 +25,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Style
-        run: npm run format:check
-      
       - name: Run Tests
         run: npm run test -- --coverage
