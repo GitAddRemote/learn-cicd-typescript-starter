@@ -19,7 +19,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
 
       - name: Format and style codes
         run: npm run format:check
