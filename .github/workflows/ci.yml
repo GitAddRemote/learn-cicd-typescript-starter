@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         uses: npm ci
 
-      -name: style
+      - name: Format and style codes
         run: npm run format:check
 
   tests:
