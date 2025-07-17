@@ -24,6 +24,9 @@ jobs:
       - name: Format and style codes
         run: npm run format:check
 
+      - name: Lint
+        run: npm run lint
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
